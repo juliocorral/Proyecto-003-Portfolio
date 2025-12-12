@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: content-box;
+}
+
+// Variables
+$color-claro: #ffffff;
+$color-oscuro: #000000;
+$color-fondo: rgb(45, 145, 230);
+$color-boton: rgb(12, 75, 127);
+
+h1{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: clamp(1rem, 3vw, 8rem);
+    color: $color-claro;
+}
+
+h2{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: clamp(1rem, 2.5vw, 8rem);
+    color: $color-oscuro;
+}
+
+h3{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: clamp(1rem, 2vw, 4rem);
+    color: $color-claro;
+}
+
+.btn-primario{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1rem;
+    color: $color-claro;
+    background-color: $color-boton;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+
+    &:hover{
+        background-color: darken($color-boton, 30%);
+    }
+}
+
