@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     border: 0;
-    box-sizing: content-box;
+    box-sizing: border-box;
 }
 
 // Variables
@@ -11,24 +11,29 @@ $color-oscuro: #000000;
 $color-fondo: rgb(45, 145, 230);
 $color-boton: rgb(12, 75, 127);
 
+$tablet: 600px;
+$desktop: 1200px;
+
+// Tipografías
 h1{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: clamp(1rem, 3vw, 8rem);
+    font-size: clamp(1.5rem, 3vw, 8rem);
     color: $color-claro;
 }
 
 h2{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: clamp(1rem, 2.5vw, 8rem);
+    font-size: clamp(1.3rem, 2.5vw, 8rem);
     color: $color-oscuro;
 }
 
 h3{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: clamp(1rem, 2vw, 4rem);
+    font-size: clamp(1.2rem, 2vw, 4rem);
     color: $color-claro;
 }
 
+// Botones
 .btn-primario{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 1rem;
