@@ -51,8 +51,8 @@ nav{
     gap: 2rem;
     width: 100%;
     height: 100%;
+    padding: 2rem;
     overflow-y: scroll;
-    padding: 1rem;
 
     article.ficha{
         position: relative;
@@ -68,23 +68,31 @@ nav{
         transition: transform 0.3s ease;
 
         &:hover{
-            transform: translateY(-10px);
+            transform: translateY(-10px) scale(1.1);;
+        }
+
+        &:hover{
+            .btn-primario{
+                opacity: 1;
+            }
+            p{
+                opacity: 1;
+            }
+            img{
+                filter : brightness(0.7);
+            }
         }
 
         img{
             position: absolute;
-            top: 0;
-            left: 0;
+            inset: 0;
             z-index: -1;
             width: 100%;
             height: auto;
+            object-fit: cover;
+            object-position: center;
             border-radius: 0.5rem;
-            margin-bottom: 1rem;
             transition: transform 0.5s ease;
-
-            &:hover{
-                transform: scale(1.03);
-            }
         }
 
         h3{
@@ -92,11 +100,16 @@ nav{
         }
 
         p{
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             font-size: 1rem;
             color: c.$color-claro;
             text-align: center;
             margin-bottom: 2rem;
+            opacity: 0;
+        }
+
+        .btn-primario{
+            opacity: 0;
+            transition: 0.5s;
         }
     }
 }

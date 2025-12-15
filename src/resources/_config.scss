@@ -5,6 +5,16 @@
     box-sizing: border-box;
 }
 
+// Tipografías
+@font-face {
+    font-family: 'Outfit';
+    src: url('./fonts/Outfit-VariableFont_wght.ttf');
+}
+@font-face {
+    font-family: 'Work Sans';
+    src: url('./fonts/WorkSans-VariableFont_wght.ttf');
+}
+
 // Variables
 $color-claro: #ffffff;
 $color-oscuro: #000000;
@@ -14,23 +24,30 @@ $color-boton: rgb(12, 75, 127);
 $tablet: 600px;
 $desktop: 1200px;
 
-// Tipografías
+$fuenteTitulos: 'Outfit', sans-serif; 
+$fuenteTexto: 'Work Sans', sans-serif;
+
+// Títulos
 h1{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: $fuenteTitulos;
     font-size: clamp(1.5rem, 3vw, 8rem);
     color: $color-claro;
 }
 
 h2{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: $fuenteTitulos;
     font-size: clamp(1.3rem, 2.5vw, 8rem);
     color: $color-oscuro;
 }
 
 h3{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: clamp(1.2rem, 2vw, 4rem);
+    font-family: $fuenteTitulos;
+    font-size: 1rem;
     color: $color-claro;
+}
+
+p{
+    font-family: $fuenteTexto;
 }
 
 // Botones
