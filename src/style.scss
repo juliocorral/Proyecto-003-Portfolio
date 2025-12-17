@@ -110,6 +110,8 @@ nav{
         .btn-primario{
             opacity: 0;
             transition: 0.5s;
+            position: absolute ;
+            bottom: 1rem;
         }
     }
 }
