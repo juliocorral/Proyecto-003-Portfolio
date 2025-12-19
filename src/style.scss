@@ -5,6 +5,10 @@ body{
     flex-direction: column;
     height: 100dvh;
     background-color: c.$color-fondo;
+
+    ::-webkit-scrollbar {
+        display: none;
+    }
 }
 
 nav{
